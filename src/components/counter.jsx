@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Counter = (props) => {
   const { value } = props;
@@ -11,14 +11,14 @@ const Counter = (props) => {
     classes += value === 0 ? "bg-warning" : "bg-primary";
     return classes;
   };
-  const handleIncrement = () => {
-    console.log("handle increment");
-    // setValue((prevState) => prevState + 1);
-  };
-  const handleDecrement = () => {
-    console.log("handle decrement");
-    // setValue((prevState) => prevState - 1);
-  };
+//   const handleIncrement = () => {
+//     console.log("handle increment");
+//     // setValue((prevState) => prevState + 1);
+//   };
+//   const handleDecrement = () => {
+//     console.log("handle decrement");
+//     // setValue((prevState) => prevState - 1);
+//   };
   return (
     <div>
       <span>{props.name}</span>
